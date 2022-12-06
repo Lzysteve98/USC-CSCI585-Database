@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0">
+<Document>
+<Style id="z1">
+<IconStyle><Icon><href>http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png</href></Icon></IconStyle>
+</Style>
+
+<Folder>
+<name>Library</name>
+<Placemark><name>Eng Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28895958853875,34.01967708409428</coordinates></Point>
+</Placemark>
+<Placemark><name>Archt Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28772618212672,34.019459183433575</coordinates></Point>
+</Placemark>
+<Placemark><name>Leavey Library</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28295637864458,34.02162575631786</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder>
+<name>Campus Gates</name>
+<Placemark><name>Downey</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.29126389036325,34.02202748921641</coordinates></Point>
+</Placemark>
+<Placemark><name>McCarthy</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28112512122979,34.02057035155964</coordinates></Point>
+</Placemark>
+<Placemark><name>McClintock</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28719276014556,34.024967956388394</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder>
+<name>Waterworks</name>
+<Placemark><name>Waterwork1</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28607562009086,34.02037391907919</coordinates></Point>
+</Placemark>
+<Placemark><name>Waterwork2</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28522996987988,34.0203101258524596</coordinates></Point>
+</Placemark>
+<Placemark><name>Waterwork3</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28307740485421,34.01951395217878</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Folder>
+<name>Eateries</name>
+<Placemark><name>Campus Eatery</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28601392928351,34.020573785560224</coordinates></Point>
+</Placemark>
+<Placemark><name>City Tacos</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.28465990737294,34.02416112850744</coordinates></Point>
+</Placemark>
+<Placemark><name>Bobatime</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.292067423357304,34.02245418171781</coordinates></Point>
+</Placemark>
+</Folder>
+
+<Placemark><name>Home</name>
+<styleUrl>#z1</styleUrl><Point><coordinates>-118.2955558,34.0233698</coordinates></Point>
+</Placemark>
+
+
+<Placemark>
+ <name>Convex Hull</name> 
+ <Polygon> <outerBoundaryIs>  <LinearRing>  
+  <coordinates>
+  -118.28772618212672,34.019459183433575,0.
+  -118.28895958853875,34.01967708409428,0.
+  -118.2955558,34.0233698,0.
+  -118.28719276014556,34.024967956388394,0.
+  -118.28465990737294,34.02416112850744,0.
+  -118.28112512122979,34.02057035155964,0.
+  -118.2830774048542,34.01951395217878,0.
+  -118.28772618212672,34.019459183433575,0.
+  </coordinates>
+ </LinearRing> </outerBoundaryIs> </Polygon>
+  <Style> 
+  <PolyStyle>  
+   <color>#a0ff00ff</color>
+  <outline>0</outline>
+  </PolyStyle> 
+ </Style>
+</Placemark>
+
+<Folder>
+<name>4 nearest neighbors</name>
+<Placemark>
+  <LineString>
+  <name>Salvatory Lab</name>
+    <extrude>1</extrude>
+    <coordinates>-118.2955558,34.0233698,0 -118.292067423357304,34.02245418171781,0</coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <LineString>
+  	<name>Vermont</name>
+    <extrude>1</extrude>
+    <coordinates>-118.2955558,34.0233698,0 -118.29126389036325,34.02202748921641,0</coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <LineString>
+  <name>Cinematics School</name>
+    <extrude>1</extrude>
+    <coordinates>-118.2955558,34.0233698,0 -118.28895958853875,34.01967708409428,0</coordinates>
+  </LineString>
+</Placemark>
+<Placemark>
+  <LineString>
+  <name>SGM</name>
+    <extrude>1</extrude>
+    <coordinates>-118.2955558,34.0233698,0 -118.28719276014556,34.024967956388394,0</coordinates>
+  </LineString>
+</Placemark>
+</Folder>
+</Document>
+</kml>
+

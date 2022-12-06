@@ -1,0 +1,30 @@
+-- Postgres+PostGIS
+-- create extension POSTGIS;
+
+CREATE TABLE SpatialData (Loc_ID integer primary key, Loc_Name varchar, geom geometry);
+
+INSERT INTO SpatialData VALUES
+(1,'Eng Library','POINT(-118.28895958853875 34.01967708409428)'),
+(2,'Archt Library','POINT(-118.28772618212672 34.019459183433575)'),
+(3,'Downey','POINT(-118.29126389036325 34.02202748921641)'),
+(4,'Waterwork1','POINT(-118.28607562009086 34.02037391907919)'),
+(5,'Campus Eatery','POINT(-118.28601392928351 34.020573785560224)'),
+(6,'Waterwork2','POINT(-118.28522996987988 34.0203101258524596)'),
+(7,'Waterwork3','POINT(-118.2830774048542 34.01951395217878)'),
+(8,'McCarthy','POINT(-118.28112512122979 34.02057035155964)'),
+(9,'Leavey Library','POINT(-118.28295637864458 34.02162575631786)'),
+(10,'City Tacos','POINT(-118.28465990737294 34.02416112850744)'),
+(11,'McClintock','POINT(-118.28719276014556 34.024967956388394)'),
+(12,'Bobatime','POINT(-118.292067423357304 34.02245418171781)'),
+(13,'Home','POINT(-118.2955558 34.0233698)');
+
+-- The convex hull
+SELECT ST_AsText(ST_ConvexHull(ST_Collect(geom)))
+FROM SpatialData;
+
+-- 4 Nearest places
+SELECT Loc_Name, geom <#> st_setsrid(st_makepoint(-118.2955558,34.0233698),4326) AS distance
+FROM SpatialData
+WHERE Loc_Name <> 'Home'
+ORDER BY geom <#> st_setsrid(st_makepoint(-118.2955558,34.0233698),4326)
+LIMIT 4;
